@@ -22,6 +22,7 @@ void main() {
   int a = 10;
   int b = 5;
   bool isGreater = a > b;
+  bool isEqual = a == b;
 
   int sum = a + b;
   print("Sum of a and b: $sum");

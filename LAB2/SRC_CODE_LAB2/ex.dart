@@ -6,6 +6,8 @@ void checkScore(double score) {
   }
 }
 
+int multiply(int a, int b) => a * b;
+
 class Car{
   String brand;
   double price;
@@ -136,6 +138,9 @@ void main() async{
     print("Color: $color");
   }
   colors.forEach((color) => print("Color: $color")); 
+
+  int res = multiply(3, 4);
+  print("Result of multiplication: $result");
 
   // Ex4
   print("");

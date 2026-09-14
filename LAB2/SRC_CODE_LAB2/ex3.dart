@@ -6,6 +6,9 @@ void checkScore(double score) {
   }
 }
 
+// Arrow function
+int multiply(int a, int b) => a * b;
+
 void main(){
   double score = 7.5;
   checkScore(score);
@@ -45,4 +48,9 @@ void main(){
   for(String color in colors){
     print("Color: $color");
   }
+
+  colors.forEach((color) => print("Color: $color")); 
+  
+  int result = multiply(3, 4);
+  print("Result of multiplication: $result");
 }
