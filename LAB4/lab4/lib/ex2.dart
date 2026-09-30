@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart';
-
 class InputControlsDemo extends StatefulWidget {
   const InputControlsDemo({super.key});
 
@@ -86,6 +84,8 @@ class _InputControlsDemoState extends State<InputControlsDemo> {
                 });
               },
             ),
+
+
             RadioListTile<String>(
               title: const Text('Comedy'),
               value: 'Comedy',
@@ -108,12 +108,11 @@ class _InputControlsDemoState extends State<InputControlsDemo> {
                 child: const Text('Open Date Picker'),
               ),
             ),
+
             const SizedBox(height: 10),
             Center(
               child: Text(
-                _selectedDate == null
-                    ? ''
-                    : 'Selected Date: ${_selectedDate!.day}/${_selectedDate!.month}/${_selectedDate!.year}',
+                _selectedDate == null ? '' : 'Selected Date: ${_selectedDate!.day}/${_selectedDate!.month}/${_selectedDate!.year}',
                 style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
               ),
             ),
